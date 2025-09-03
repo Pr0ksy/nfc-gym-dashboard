@@ -13,7 +13,7 @@
 - ⚠ Visual indicators for memberships: active ✅, expiring soon ⚠, expired ❌  
 - 📥 Export members to Excel format (.xlsx)  
 - 🔒 Admin login system
-- 
+  
 ---
 
 ## Run (Bash / local)
