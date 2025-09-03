@@ -1,24 +1,24 @@
 # Gym NFC Dashboard
 
-**Gym NFC Dashboard** je web-based aplikacija za upravljanje članovima teretane sa integrisanom NFC funkcionalnošću. Omogućava evidenciju dolazaka članova, praćenje statusa članarine i jednostavan pregled svih članova putem modernog dashboarda.
+**Gym NFC Dashboard** is a web-based application for managing gym members with integrated NFC functionality. It allows tracking member attendance, monitoring membership status, and providing an easy overview of all members through a modern dashboard.
 
 ---
 
-## Funkcionalnosti
+## Features
 
-- ✅ Upravljanje članovima (dodavanje, brisanje, uređivanje)  
-- 🏋️‍♂️ NFC dolasci: evidentiranje članova kada prislone NFC tag  
-- 📊 Dashboard sa statistikama: ukupno članova, aktivni, istekli članovi  
-- 🔍 Pretraga, filtriranje i sortiranje članova po različitim kriterijumima  
-- ⚠ Vizuelne oznake za članarine: aktivna ✅, uskoro ističe ⚠, istekla ❌  
-- 📥 Export članova u Excel format (.xlsx)  
-- 🔒 Login sistem za administratore  
-
+- ✅ Member management (add, delete, edit)  
+- 🏋️‍♂️ NFC check-ins: record members when they tap their NFC tag  
+- 📊 Dashboard with statistics: total members, active members, expired members  
+- 🔍 Search, filter, and sort members by various criteria  
+- ⚠ Visual indicators for memberships: active ✅, expiring soon ⚠, expired ❌  
+- 📥 Export members to Excel format (.xlsx)  
+- 🔒 Admin login system
+- 
 ---
 
-## Pokretanje projekta (Bash / lokalno)
+## Run (Bash / local)
 
-1. Klonirajte repozitorijum:
+1. Clone this repo:
 
 ```bash
 git clone https://github.com/username/gym-nfc-dashboard.git
@@ -26,7 +26,7 @@ cd gym-nfc-dashboard
 ```
 ---
 
-## Tehnologije
+## Technologies used
 
 - PHP 8+
 - MySQL
@@ -35,10 +35,12 @@ cd gym-nfc-dashboard
 
 ---
 
-## Korišćene biblioteke
+## Libraries used
 
-- PHPSpreadsheet za eksportovanje Excel fajlova
-- Vanilla JS za modals i AJAX dodavanje članova
+- PHPSpreadsheet for exporting in excel
+- Vanilla JS for modals and AJAX for adding members
 
-## Licenca
+## 👨‍💻 Author
+
+- [@prodanicc](https://www.instagram.com/prodanicc)
 <p> <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="Apache 2.0 License"/> </p>
