@@ -26,6 +26,16 @@ cd gym-nfc-dashboard
 ```
 ---
 
+<p align="center">
+  <img src="screenshots/1.png" alt="Dashboard Screenshot" width="600"/>
+  <img src="screenshots/2.png" alt="Dashboard Screenshot" width="600"/>
+  <img src="screenshots/3.png" alt="Dashboard Screenshot" width="600"/>
+  <img src="screenshots/4.png" alt="Dashboard Screenshot" width="600"/>
+  <img src="screenshots/5.png" alt="Dashboard Screenshot" width="600"/>
+</p>
+
+
+
 ## Technologies used
 
 - PHP 8+
