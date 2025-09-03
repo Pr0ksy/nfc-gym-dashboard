@@ -23,3 +23,12 @@
 ```bash
 git clone https://github.com/username/gym-nfc-dashboard.git
 cd gym-nfc-dashboard
+```
+---
+
+## Tehnologije
+
+- PHP 8+
+- MySQL / MariaDB
+- HTML, CSS, JavaScript
+- XAMPP/WAMP/MAMP za lokalni razvoj
