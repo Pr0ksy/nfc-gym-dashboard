@@ -1,0 +1,100 @@
+/* Reset osnovnog */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #ffffff, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.login-card {
+    background: #1e57ad;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-card .logo img {
+    width: 100px;
+    margin-bottom: 20px;
+    animation: logoBounce 1s ease;
+}
+
+.login-card h2 {
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.error {
+    color: #e74c3c;
+    margin-bottom: 15px;
+}
+
+.login-card input[type="text"],
+.login-card input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.login-card input[type="text"]:focus,
+.login-card input[type="password"]:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 10px rgba(252, 252, 252, 0.3);
+}
+
+.login-card button {
+    width: 100%;
+    padding: 12px;
+    background: #ffffff;
+    color: #184c64;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-card button:hover {
+    background: #2575fc;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(37,117,252,0.3);
+}
+
+@keyframes logoBounce {
+    0% { transform: scale(0); }
+    60% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@media (max-width: 450px) {
+    .login-card {
+        padding: 30px 20px;
+    }
+
+    .login-card h2 {
+        font-size: 20px;
+    }
+}
