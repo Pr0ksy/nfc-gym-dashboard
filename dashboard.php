@@ -53,7 +53,7 @@ $expired_count = $conn->query("SELECT COUNT(*) as expired FROM members WHERE cla
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gym Dashboard</title>
+    <title>FITSCOPE Dashboard</title>
     <link rel="stylesheet" href="css/style.css?v=2.0">
 </head>
 <body>
@@ -205,3 +205,4 @@ $expired_count = $conn->query("SELECT COUNT(*) as expired FROM members WHERE cla
 <script src="js/dashboard.js"></script>
 </body>
 </html>
+
