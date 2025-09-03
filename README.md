@@ -2,6 +2,8 @@
 
 **Gym NFC Dashboard** is a web-based application for managing gym members with integrated NFC functionality. It allows tracking member attendance, monitoring membership status, and providing an easy overview of all members through a modern dashboard.
 
+<img src="images/logo.png" alt="Ikonica" style="width:24px; height:24px; vertical-align:middle;">
+
 ---
 
 ## Features
