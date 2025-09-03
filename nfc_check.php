@@ -1,17 +1,14 @@
 <?php
 include("includes/db.php");
 
-// Uzmi UID iz GET parametra (simulacija NFC čitača)
 $uid = $_GET['uid'] ?? null;
 
-// --- Briše dolaske starije od 5 sati ---
 $expire_time = date('Y-m-d H:i:s', time() - 5 * 3600);
 $conn->query("DELETE FROM attendance WHERE dolazak < '$expire_time'");
 
-// --- Upis dolaska ako postoji UID ---
 $message = '';
 if($uid) {
-    // Pronađi člana po UID-u
+
     $stmt = $conn->prepare("SELECT id, ime, prezime FROM members WHERE nfc_uid=? LIMIT 1");
     $stmt->bind_param("s", $uid);
     $stmt->execute();
@@ -22,7 +19,6 @@ if($uid) {
         $member_id = $member['id'];
         $now = date('Y-m-d H:i:s');
 
-        // Ubaci dolazak u attendance tabelu
         $stmt2 = $conn->prepare("INSERT INTO attendance (member_id, dolazak) VALUES (?, ?)");
         $stmt2->bind_param("is", $member_id, $now);
         $stmt2->execute();
@@ -33,7 +29,6 @@ if($uid) {
     }
 }
 
-// --- CSS stilovi ---
 echo <<<STYLE
 <style>
 body {
@@ -113,15 +108,12 @@ tr:hover {
 STYLE;
 
 echo '<a href="dashboard.php" class="back-btn">⬅ Nazad na Dashboard</a>';
-// Prikaži poruku ako postoji
 echo $message;
 
-// --- Prikaz dolazaka u tabeli ---
 echo "<h2>Dolasci danas</h2>";
 echo "<table>";
 echo "<tr><th>Član</th><th>Dolazak</th></tr>";
 
-// Prikaži sve dolaske za današnji datum
 $today = date('Y-m-d');
 $stmt3 = $conn->prepare("
     SELECT m.ime, m.prezime, a.dolazak 
@@ -143,3 +135,4 @@ while($row = $res3->fetch_assoc()){
 
 echo "</table>";
 ?>
+
