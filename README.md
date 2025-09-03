@@ -29,6 +29,16 @@ cd gym-nfc-dashboard
 ## Tehnologije
 
 - PHP 8+
-- MySQL / MariaDB
+- MySQL
 - HTML, CSS, JavaScript
-- XAMPP/WAMP/MAMP za lokalni razvoj
+- XAMPP za lokalni razvoj
+
+---
+
+## Korišćene biblioteke
+
+- PHPSpreadsheet za eksportovanje Excel fajlova
+- Vanilla JS za modals i AJAX dodavanje članova
+
+## Licenca
+<p> <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="Apache 2.0 License"/> </p>
